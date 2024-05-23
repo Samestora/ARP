@@ -11,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Metropolis';
+  scroll-behavior: smooth !important;
 }
 
 a{
@@ -143,7 +144,9 @@ a{
 .signupbtn:hover, .signup:focus {
   color: #074173;
 }
-
+.separator{
+  position: relative;
+}
 .separator::before {
   content: "";
   position: absolute;
@@ -153,44 +156,47 @@ a{
   background-image: linear-gradient(to right,#6fbe2e 19%,#00bbd6 43%,#0f61a9 57%,#264486 81%);
 }
 
-.main{
+/* Main container styling */
+.banner {
+  display: flex;
   position: relative;
   margin-top: 1.15rem;
 }
 
-.banner-container{
+/* Banner text container with absolute positioning */
+.banner-text-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
 
-.banner-title{
+/* Banner title styling */
+.banner-title {
   color: #cecece;
   font-size: xx-large;
   font-weight: bold;
   text-align: center;
   padding: 2.5%;
-  min-width: 120%;
 }
 
-.banner-desc{
+/* Banner description styling */
+.banner-desc {
   color: #b6b5b5;
   font-size: x-large;
-  font-weight: bold;
+  padding-top: 2.5%;
   text-align: center;
-  padding: 2.5%;
-  min-width: 120%; 
 }
 
-.banner-btn-section{
+/* Banner button section styling */
+.banner-btn-section {
   display: flex;
   justify-content: center;
   margin-top: 8%;
-  min-width: 120%;
 }
 
-.banner-btn{
+/* Banner button styling */
+.banner-btn {
   color: #cecece;
   font-size: xx-large;
   font-weight: bold;
@@ -200,11 +206,12 @@ a{
   padding-bottom: 3%;
   border-style: solid;
   border-width: 2px;
-  border-color:#FFF;
+  border-color: #FFF;
   transition: 0.2s ease-in-out;
 }
 
-.banner-btn:hover{
+/* Banner button hover effect */
+.banner-btn:hover {
   transform: scale(105%);
   color: #264486;
   background-color: #cecece;
@@ -216,5 +223,16 @@ a{
   padding-bottom: 3%;
   border-style: solid;
   border-width: 2px;
-  border-color:#FFF;
+  border-color: #FFF;
+}
+
+/* About section styling */
+.about {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+#about-title{
+  font-weight: lighter;
 }
