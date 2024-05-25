@@ -1,0 +1,135 @@
+.footer{
+    margin-top: 25vh;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100vw;
+}
+
+/* glowy OoOooOO */
+.footer::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 0.4rem;
+    background-image: linear-gradient(to right,#6fbe2e 19%,#00bbd6 43%,#0f61a9 57%,#264486 81%);
+}
+
+.footer-wrap{
+    display: flex;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+  
+/* Left Section */
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    border-right: 1px solid #cecece;
+}
+  
+.footer-brand{
+    display: flex;
+    flex: 1;
+    margin-left: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+  
+.footer-brand a{
+    color: #00bbd6;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+}
+
+.news-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.news-form{
+    display: flex;
+    justify-content: center;
+}
+
+.news-email{
+    cursor: pointer;
+    border-radius: 1.5rem;
+    width: 24em;
+    height: 4em;
+    margin-right: 2.5rem;
+    padding: 0 2rem;
+}
+
+.news-submit{
+    cursor: pointer;
+    border-radius: 1.5rem;
+    width: 8em;
+    height: 4em;
+}
+/* 
+    Mostly my socials
+*/
+
+
+/* Right Section */
+.footer-right{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.socials ul li{
+    text-decoration: none;
+    padding: 1rem;
+    list-style-type: none;
+    display: flex;
+}
+
+.socials ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+}
+
+.socials ul li a:hover{
+    color: #0f61a9;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.github-icon::before{
+    content: url('../assets/github.svg');
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding-right: 16px;
+}
+
+.patreon-icon::before{
+    content: url('../assets/patreon.png');
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding-right: 16px;
+}
+
+.code-icon::before{
+    content: url('../assets/code.svg');
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding-right: 16px;
+}
