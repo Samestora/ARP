@@ -21,8 +21,8 @@ h1 {
   margin: 40px 0 20px;
 }
 
-.broken-link::before{
-  content: url('../assets/broken-link.svg');
+.zap::before{
+  content: url('../../assets/err/zap.svg');
   display: flex;
   width: 100px;
   height: 100px;

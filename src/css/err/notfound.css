@@ -21,8 +21,8 @@ h1 {
   margin: 40px 0 20px;
 }
 
-.lock::before {
-  content: url('../assets/lock.svg');
+.broken-link::before{
+  content: url('../../assets/err/broken-link.svg');
   display: flex;
   width: 100px;
   height: 100px;

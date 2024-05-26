@@ -21,8 +21,8 @@ h1 {
   margin: 40px 0 20px;
 }
 
-.zap::before{
-  content: url('../assets/zap.svg');
+.lock::before {
+  content: url('../../assets/err/lock.svg');
   display: flex;
   width: 100px;
   height: 100px;
