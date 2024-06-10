@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        ARP | Trial
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/trial.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon-white.png">
+    <meta credit="favicon" source="https://cdn3.iconfinder.com/data/icons/artificial-intelligence-111/64/bug_virus_smart_future_tech-512.png">
+</head>
+
+<body>
+    <!-- Main -->
+    <div class="main">
+        <div class="main-container">
+            <section class="main-left">
+                <div class="logo">
+                    <a href="index.html">
+                        ARP &COPY;
+                    </a>
+                </div>
+    
+                <div class="tabs">
+                    <a href="#">Proof of Concept</a>
+                    <a href="#">Prerequirements</a>
+                    <a href="#">Risk Rankings</a>
+                    <a href="#">Patch Suggestion</a>
+                </div>
+            </section>
+    
+            <section class="main-middle">
+                <form>
+                    <div class="button-input">
+                        <input type="submit" value="Quicksave" onclick="convertMarkdown()">
+                    </div>
+                    <div class="text-input">
+                        <textarea id="markdown-input" placeholder="Enter Markdown here..."></textarea>
+                    </div>
+                </form>
+            </section>
+    
+            <section class="main-right">
+                <p>Report 2024</p>
+                <div class="output" id="html-output"></div>
+            </section>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/md.js"></script>
+</body>
